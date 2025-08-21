@@ -1,0 +1,89 @@
+
+<html>
+  <head>
+  </head>
+  <body>
+  <center><h1>Model Card - IDOOU AI Budget Predicter</h1></center>
+  <h2>Model Details</h2>
+  
+<br>-- Budget Predicter AI is a model that aims to predict the budget of the customers based on different available parameters or attributes.
+<br>-- For this purpose a Logistic Regression model has been built.
+<br>-- Fairness and accuracy of the model have been also considered.
+<br>-- Author: X. Laibarra with the support of Udacity and its community.
+
+  <h2>Intended Use</h2>
+  
+<br>-- Based on the predicted budget, different activities will be recommended to every user.
+<br>-- The model will be implemented on a mobile app so the users can benefit from the recommendations.
+
+  <h2>Factors</h2>
+  
+<br>-- Age
+<br>-- Educational level
+<br>-- Gender
+<br>-- Predicted budget
+
+  <h2>Metrics</h2>
+  
+<br>-- The calculated metrics have been th following:
+<br>-- Accuracy
+<br>-- Statistical parity difference
+<br>-- Equal opportunity difference
+<br>-- Odds difference 
+<br>-- Theil index value
+
+  <h2> Training Data </h2>
+  
+<br>-- Training set: 50%
+
+  <h2> Evaluation Data </h2>
+  
+<br>-- Evaluation data: 30%
+<br>-- Test data: 20%
+
+  <h2>Quantitative Analysis</h2>
+  
+<br>--
+<br>--Before:
+    - Accuracy score: 0.9952021494370522
+    - Disparate Impact between unprivileged and privileged groups = 0.332479
+    - Statistical Parity Difference between unprivileged and privileged groups = -0.662471
+<br>--After:
+    - Accuracy score: 0.9946995659127256
+    - Disparate Impact between unprivileged and privileged groups = 1.000000
+    - Statistical Parity Difference between unprivileged and privileged groups = 0.000000
+<br>--
+
+  
+  <br/><br/><b>Results of the AI model after applying the bias mitigation strategy</b><br/>
+  
+  <center>
+  
+  <img src="lr_conf_matrix.png"><br/>
+  <img src="lr_rw_conf_matrix.png"><br/>
+  <img src="stratifiy_education_level.png"><br/>
+
+  </center>
+
+  <h2>Ethical Considerations</h2>
+  
+<br>-- 
+<br>-- 
+<br>-- 
+
+  <h2>Caveats and Recommendations</h2>
+  
+<br>-- 
+<br>-- 
+<br>-- 
+<br>-- Further ethical AI analyses I would apply beyond this project:
+
+  <h2>Business Consequences</h2>
+  
+
+<br>-- Positive Impact:
+
+<br>-- Negative Impact:
+
+  </body>
+</html>
